@@ -1,0 +1,426 @@
+:root {
+  --dark: #222831;
+  --dark-soft: #2b313c;
+  --accent: #ffbe33;
+  --accent-deep: #f5b223;
+  --light: #ffffff;
+  --muted: #f1f2f3;
+  --text: #0c0c0c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.topbar {
+  background: var(--dark);
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .container {
+  max-width: 1140px;
+}
+
+.navbar {
+  min-height: 38px;
+  padding: 0;
+}
+
+.brand-mark {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Dancing Script", cursive;
+  line-height: 1;
+  padding: 0;
+}
+
+.brand-mark:hover,
+.brand-mark:focus {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 38px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active-accent {
+  color: var(--accent);
+}
+
+.header-icons a {
+  color: #ffffff;
+  font-size: 11px;
+  transition: color 0.2s ease;
+}
+
+.header-icons a:hover {
+  color: var(--accent);
+}
+
+.order-btn {
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-btn:hover {
+  background: var(--accent-deep);
+  color: #ffffff;
+}
+
+.custom-toggler {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.menu-section {
+  padding: 37px 0 70px;
+}
+
+.menu-wrap {
+  max-width: 470px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #0b0b0b;
+  margin-bottom: 12px;
+}
+
+.menu-filters {
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-filters a {
+  color: #222831;
+  font-size: 8px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.menu-filters a.active {
+  background: var(--dark);
+  color: #ffffff;
+}
+
+.menu-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--dark-soft);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.card-image-shell {
+  height: 78px;
+  background: var(--muted);
+  border-bottom-left-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-circle {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.18);
+  border: 4px solid #f4f4f4;
+}
+
+.pizza-one {
+  background:
+    radial-gradient(circle at 38% 38%, #ffe08a 0 13%, transparent 14%),
+    radial-gradient(circle at 56% 45%, #d83a2f 0 12%, transparent 13%),
+    radial-gradient(circle at 64% 30%, #7cb342 0 9%, transparent 10%),
+    radial-gradient(circle at 34% 62%, #cc2e2e 0 10%, transparent 11%),
+    radial-gradient(circle at 58% 64%, #7cb342 0 8%, transparent 9%),
+    radial-gradient(circle, #f4c04d 0 58%, #cc8c1d 59% 100%);
+}
+
+.burger-one,
+.burger-two,
+.burger-three {
+  position: relative;
+  background:
+    linear-gradient(#f2b13d 0 24%, transparent 24% 36%, #5d2b0d 36% 50%, #5ab24c 50% 60%, #d94233 60% 70%, #f2b13d 70% 100%);
+}
+
+.pizza-two,
+.pizza-three {
+  background:
+    radial-gradient(circle at 38% 42%, #7bc043 0 7%, transparent 8%),
+    radial-gradient(circle at 52% 32%, #d72638 0 10%, transparent 11%),
+    radial-gradient(circle at 63% 58%, #7bc043 0 9%, transparent 10%),
+    radial-gradient(circle at 31% 57%, #d72638 0 8%, transparent 9%),
+    radial-gradient(circle, #f8cb63 0 58%, #d89022 59% 100%);
+}
+
+.pasta-one,
+.pasta-two {
+  background:
+    radial-gradient(circle at 36% 34%, #d7422c 0 9%, transparent 10%),
+    radial-gradient(circle at 52% 30%, #82c34b 0 8%, transparent 9%),
+    radial-gradient(circle at 62% 46%, #f5d275 0 11%, transparent 12%),
+    radial-gradient(circle at 44% 60%, #e9c05a 0 10%, transparent 11%),
+    radial-gradient(circle at 64% 60%, #d7422c 0 8%, transparent 9%),
+    radial-gradient(circle, #f2f2f2 0 58%, #d8d8d8 59% 100%);
+}
+
+.fries-one {
+  background:
+    linear-gradient(65deg, transparent 26%, #e3a91f 26% 34%, transparent 34% 41%, #f4bf38 41% 49%, transparent 49% 57%, #e3a91f 57% 65%, transparent 65%),
+    linear-gradient(115deg, transparent 26%, #f6c443 26% 34%, transparent 34% 42%, #e3a91f 42% 50%, transparent 50% 58%, #f6c443 58% 66%, transparent 66%),
+    radial-gradient(circle, #f2d4a6 0 55%, #d6b37c 56% 100%);
+}
+
+.card-content {
+  padding: 11px 10px 10px;
+  color: #ffffff;
+}
+
+.card-content h3 {
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.card-content p {
+  font-size: 7px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-meta span {
+  font-size: 8px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card-meta a {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-more-btn {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 71px;
+  height: 21px;
+  background: var(--accent);
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.view-more-btn:hover {
+  background: var(--accent-deep);
+  color: #ffffff;
+}
+
+.image-placeholder-section {
+  margin-top: 28px;
+}
+
+.image-placeholder-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.image-placeholder-box {
+  width: 100%;
+  height: 170px;
+  border: 2px dashed #cfd3d8;
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(34, 40, 49, 0.03), rgba(255, 190, 51, 0.08));
+}
+
+.site-footer {
+  background: var(--dark);
+  color: #ffffff;
+  padding: 33px 0 16px;
+}
+
+.site-footer .container {
+  max-width: 760px;
+}
+
+.footer-block h3,
+.footer-brand h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a,
+.footer-block p,
+.footer-brand p {
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-links i {
+  margin-right: 6px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 9px;
+}
+
+.social-links a {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  color: #ffffff;
+  font-size: 7px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .topbar {
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    line-height: 1.8;
+  }
+
+  .header-icons {
+    padding: 10px 0 4px;
+    justify-content: center;
+  }
+
+  .menu-wrap {
+    max-width: 700px;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .menu-section {
+    padding: 28px 0 50px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .menu-filters a {
+    font-size: 11px;
+  }
+
+  .card-content h3 {
+    font-size: 14px;
+  }
+
+  .card-content p,
+  .card-meta span {
+    font-size: 11px;
+  }
+
+  .view-more-btn {
+    min-width: 110px;
+    height: 38px;
+    font-size: 11px;
+  }
+
+  .site-footer {
+    padding-top: 40px;
+  }
+
+  .footer-block {
+    margin-bottom: 24px;
+  }
+
+  .footer-block h3,
+  .footer-brand h3 {
+    font-size: 30px;
+  }
+
+  .footer-links a,
+  .footer-block p,
+  .footer-brand p,
+  .footer-bottom p,
+  .footer-bottom a {
+    font-size: 12px;
+  }
+}

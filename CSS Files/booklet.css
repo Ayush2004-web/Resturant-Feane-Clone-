@@ -1,0 +1,501 @@
+:root {
+  --bg-main: #222831;
+  --bg-header-left: #090909;
+  --bg-header-right: #3a4243;
+  --text-light: #ffffff;
+  --text-muted: #f1f2f3;
+  --accent: #ffbe33;
+  --accent-hover: #e6a91f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-light);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.custom-container {
+  max-width: 1180px;
+}
+
+.site-header {
+  background: linear-gradient(90deg, var(--bg-header-left) 0%, #101214 46%, var(--bg-header-right) 100%);
+}
+
+.navbar {
+  min-height: 69px;
+  padding: 0;
+}
+
+.brand-mark,
+.brand-footer h3,
+.footer-col h3,
+.booking-form-wrap h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.brand-mark {
+  color: var(--text-light);
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0;
+  margin-top: -4px;
+}
+
+.brand-mark:hover,
+.brand-mark:focus {
+  color: var(--text-light);
+}
+
+.main-nav {
+  gap: 22px;
+}
+
+.main-nav .nav-link {
+  color: var(--text-light);
+  font-size: 0.93rem;
+  font-weight: 500;
+  padding: 0;
+  line-height: 69px;
+}
+
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus {
+  color: var(--accent);
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-tools > a:not(.order-btn) {
+  color: var(--text-light);
+  font-size: 0.92rem;
+}
+
+.header-tools > a:not(.order-btn):hover,
+.header-tools > a:not(.order-btn):focus {
+  color: var(--accent);
+}
+
+.order-btn,
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 155px;
+  height: 46px;
+  padding: 0 25px;
+  border-radius: 23px;
+  background: var(--accent);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.order-btn {
+  min-width: 147px;
+  height: 40px;
+}
+
+.order-btn:hover,
+.read-more-btn:hover {
+  background: var(--accent-hover);
+  color: var(--text-light);
+}
+
+.booking-section {
+  background: #ffffff;
+  padding: 72px 0 66px;
+}
+
+.booking-row {
+  min-height: 445px;
+}
+
+.booking-form-wrap {
+  max-width: 416px;
+}
+
+.booking-form-wrap h1 {
+  margin: 0 0 22px;
+  color: #0c0c0c;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form .form-control,
+.booking-form .form-select {
+  height: 50px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  color: #222222;
+  font-size: 1rem;
+  box-shadow: none;
+  padding-left: 18px;
+}
+
+.booking-form .form-control::placeholder {
+  color: #222222;
+  opacity: 1;
+}
+
+.booking-form .form-control:focus,
+.booking-form .form-select:focus {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.booking-form .form-select {
+  background-position: right 16px center;
+}
+
+.booking-form button {
+  margin-top: 12px;
+  width: 149px;
+  height: 46px;
+  border: 0;
+  font-size: 0.95rem;
+}
+
+.map-mockup {
+  position: relative;
+  height: 259px;
+  margin-top: 121px;
+  border-radius: 6px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 61%, #6a8070 0 10px, transparent 11px),
+    linear-gradient(34deg, #476b57 0 45%, #5f6358 45% 46%, #476b57 46% 100%);
+}
+
+.map-mockup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 0 12%, rgba(255, 255, 255, 0.16) 12% 12.3%, transparent 12.3% 100%),
+    linear-gradient(0deg, transparent 0 71%, rgba(255, 255, 255, 0.16) 71% 71.3%, transparent 71.3% 100%),
+    linear-gradient(214deg, transparent 0 77%, #59606a 77% 100%);
+  opacity: 0.78;
+}
+
+.map-mockup::after {
+  content: "";
+  position: absolute;
+  left: -28px;
+  bottom: -26px;
+  width: 238px;
+  height: 145px;
+  border-radius: 50%;
+  border: 48px solid rgba(55, 99, 70, 0.78);
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(-8deg);
+}
+
+.map-controls {
+  position: absolute;
+  right: 13px;
+  z-index: 2;
+}
+
+.map-controls span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  color: #666666;
+  border-radius: 2px;
+  font-size: 0.92rem;
+}
+
+.map-controls.top-right {
+  top: 13px;
+}
+
+.map-controls.bottom-right {
+  bottom: 44px;
+}
+
+.map-controls.bottom-right span {
+  border-radius: 50%;
+}
+
+.map-watermark {
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+  z-index: 2;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #4285f4;
+  text-shadow:
+    11px 0 0 #db4437,
+    22px 0 0 #f4b400,
+    33px 0 0 #4285f4,
+    44px 0 0 #0f9d58,
+    55px 0 0 #db4437;
+  letter-spacing: 11px;
+  width: 74px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 5px;
+  left: 67px;
+  z-index: 3;
+  width: 282px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  padding: 12px 20px 14px;
+  color: #222222;
+}
+
+.map-overlay-head {
+  font-size: 1.18rem;
+  color: #5f6368;
+  margin-bottom: 10px;
+}
+
+.map-overlay p {
+  margin: 0 0 20px;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.map-overlay-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.map-overlay-foot span {
+  color: #777777;
+  font-size: 0.72rem;
+}
+
+.map-overlay-foot button {
+  min-width: 52px;
+  height: 28px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  background: #f8f9fa;
+  color: #4285f4;
+  font-size: 0.9rem;
+}
+
+.map-labels {
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+  font-size: 0.55rem;
+  color: #1f1f1f;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0 2px;
+}
+
+.site-footer {
+  padding: 54px 0 22px;
+}
+
+.footer-top {
+  justify-content: center;
+  row-gap: 32px;
+}
+
+.footer-col h3 {
+  margin: 0 0 18px;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li + li {
+  margin-top: 10px;
+}
+
+.footer-links a,
+.footer-col p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-links i {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.brand-footer p {
+  max-width: 325px;
+  margin: 0 auto 16px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social-links a {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--bg-main);
+  font-size: 0.95rem;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+.hours-day,
+.hours-time {
+  margin: 0;
+}
+
+.hours-time {
+  margin-top: 12px;
+}
+
+.footer-bottom {
+  padding-top: 52px;
+}
+
+.footer-bottom p {
+  margin: 0 0 14px;
+  color: var(--text-light);
+  font-size: 0.97rem;
+}
+
+.footer-bottom a {
+  color: var(--text-light);
+}
+
+.footer-bottom a:hover {
+  color: var(--accent);
+}
+
+.navbar-toggler {
+  filter: invert(1);
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .main-nav {
+    gap: 0;
+    margin: 18px 0;
+  }
+
+  .main-nav .nav-link {
+    line-height: 1.8;
+    padding: 4px 0;
+    text-align: center;
+  }
+
+  .header-tools {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  .booking-row {
+    min-height: auto;
+    row-gap: 28px;
+  }
+
+  .booking-form-wrap {
+    max-width: 100%;
+  }
+
+  .booking-form-wrap h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .booking-form button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .map-mockup {
+    margin-top: 8px;
+  }
+
+  .footer-bottom {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-mark {
+    font-size: 2.1rem;
+  }
+
+  .booking-form-wrap h1,
+  .footer-col h3 {
+    font-size: 2.3rem;
+  }
+
+  .footer-links a,
+  .footer-col p {
+    font-size: 0.98rem;
+  }
+
+  .read-more-btn {
+    min-width: 142px;
+    height: 42px;
+  }
+
+  .map-overlay {
+    left: 16px;
+    width: calc(100% - 82px);
+  }
+}
