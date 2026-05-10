@@ -35,8 +35,6 @@ body {
   border-radius: 20px;
   font-weight: 500;
 }
-
-/* Hero Section */
 .hero {
   height: 100vh;
   background: 
@@ -47,8 +45,6 @@ body {
   display: flex;
   align-items: center;
 }
-
-/* Text */
 .hero-text h1 {
   font-size: 48px;
   font-family: cursive;
@@ -60,7 +56,6 @@ body {
   max-width: 450px;
 }
 
-/* Dots */
 .dots span {
   display: inline-block;
   width: 10px;
@@ -76,7 +71,6 @@ body {
   opacity: 1;
 }
 
-/* Offers */
 .offers {
   background: #f4f4f4;
 }
@@ -369,8 +363,6 @@ body {
   background: rgba(255, 255, 255, 0.65);
   padding: 0 2px;
 }
-
-/* ================= TESTIMONIAL ================= */
 .testimonial-section {
   padding: 80px 0;
   background: #fff;
@@ -418,8 +410,6 @@ body {
   margin: 5px;
   cursor: pointer;
 }
-
-/* ================= FOOTER ================= */
 .footer-section {
   background: #222831;
   color: #fff;

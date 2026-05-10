@@ -30,7 +30,12 @@ a {
 }
 
 .site-header {
-  background: linear-gradient(90deg, var(--bg-header-left) 0%, #101214 46%, var(--bg-header-right) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--bg-header-left) 0%,
+    #101214 46%,
+    var(--bg-header-right) 100%
+  );
 }
 
 .navbar {
@@ -195,8 +200,18 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent 0 12%, rgba(255, 255, 255, 0.16) 12% 12.3%, transparent 12.3% 100%),
-    linear-gradient(0deg, transparent 0 71%, rgba(255, 255, 255, 0.16) 71% 71.3%, transparent 71.3% 100%),
+    linear-gradient(
+      90deg,
+      transparent 0 12%,
+      rgba(255, 255, 255, 0.16) 12% 12.3%,
+      transparent 12.3% 100%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0 71%,
+      rgba(255, 255, 255, 0.16) 71% 71.3%,
+      transparent 71.3% 100%
+    ),
     linear-gradient(214deg, transparent 0 77%, #59606a 77% 100%);
   opacity: 0.78;
 }
@@ -365,7 +380,6 @@ a {
   margin-right: 8px;
   font-size: 0.9rem;
 }
-
 .brand-footer p {
   max-width: 325px;
   margin: 0 auto 16px;
@@ -376,7 +390,6 @@ a {
   justify-content: center;
   gap: 5px;
 }
-
 .social-links a {
   width: 32px;
   height: 32px;
@@ -388,11 +401,9 @@ a {
   color: var(--bg-main);
   font-size: 0.95rem;
 }
-
 .social-links a:hover {
   color: var(--accent);
 }
-
 .hours-day,
 .hours-time {
   margin: 0;
